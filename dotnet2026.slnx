@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/dotnet2026.Api/dotnet2026.Api.csproj" />
+    <Project Path="src/dotnet2026.Application/dotnet2026.Application.csproj" />
+    <Project Path="src/dotnet2026.Domain/dotnet2026.Domain.csproj" />
+    <Project Path="src/dotnet2026.Infrastructure/dotnet2026.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/dotnet2026.UnitTests/dotnet2026.UnitTests.csproj" />
+  </Folder>
+</Solution>

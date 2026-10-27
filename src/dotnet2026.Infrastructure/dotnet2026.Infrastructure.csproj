@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\dotnet2026.Application\dotnet2026.Application.csproj" />
+    <ProjectReference Include="..\dotnet2026.Domain\dotnet2026.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Dapper" Version="2.1.89" />
+	<PackageReference Include="Microsoft.Data.SqlClient" Version="7.1.1" />
+	<PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="10.0.14" />
+	<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.13" />
+	<PackageReference Include="MySql.Data" Version="26.10.0" />
+	<PackageReference Include="StackExchange.Redis" Version="3.4.20" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Persistence\Scripts\" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

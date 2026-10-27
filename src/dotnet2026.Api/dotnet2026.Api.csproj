@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.13" />
+	<PackageReference Include="Asp.Versioning.Mvc" Version="10.2.1" />
+	<PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="10.2.1" />
+	<PackageReference Include="Swashbuckle.AspNetCore" Version="10.3.1" />
+	<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\dotnet2026.Application\dotnet2026.Application.csproj" />
+    <ProjectReference Include="..\dotnet2026.Infrastructure\dotnet2026.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Middlewares\" />
+    <Folder Include="Filters\" />
+    <Folder Include="Common\" />
+  </ItemGroup>
+
+</Project>
